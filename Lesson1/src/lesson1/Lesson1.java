@@ -18,25 +18,25 @@ public class Lesson1 {
          // TODO code application logic here
          
          
-         float a = 10;
-         int b = 6;
-         if (a==0&&b==0){
-             System.out.println("vo so nghiem");
+        
+      
+         
+             
               
             
          }
-             if (a==0&&b!=0){
-                 System.out.println("vo nghiem");    
+             
+                  
              }
-             if (a!=0) {
-         float x = -b/a;
-         System.out.println("nghiem la") ;
-         System.out.println(x) ;
-              if(a==0) {  
-                if (b==0)
+            
          
          
          
+              
+                
+         
+         
+                      
          
          
          
