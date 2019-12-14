@@ -10,6 +10,12 @@ package complex;
  * @author Administrator
  */
 class Complex {
+    public static void main(String[] args) {
+        Complex a = new Complex(2,3);
+        Complex b = new Complex(3,4);
+        b.hienthisophuc();
+        hieuhaisophuc(a,b);
+    }
 
     /**
      * @param args the command line arguments
@@ -35,12 +41,16 @@ class Complex {
     }
 
     void tonghaisophuc(Complex p1, Complex p2) {
-        System.out.println(p1.phanthuc + p2.phanthuc + "+" + p1.phanao + p2.phanao + "i");
+       
+      
+        
 
     }
 
-    void hieuhaisophuc(Complex p1, Complex p2) {
-        System.out.println(p1.phanthuc - p2.phanthuc + "+" + p1.phanao + (-1) * p2.phanao + "i");
+    void hieuhaisophuc(Complex p1,Complex p2) {
+        Float thuc1 = p1.phanthuc - p2.phanthuc;
+        Float ao1 = p1.phanao - p2.phanao;
+        System.out.println(thuc1 + "+" +ao1 + "i");
     }
 
     void tichhaisophuc(Complex p1, Complex p2) {
@@ -56,7 +66,7 @@ class Complex {
         float e = p2.phanthuc * p2.phanthuc + p2.phanao * p2.phanao;
     }
 
-    void hienthisophuc(Complex p1) {
+    void hienthisophuc() {
         System.out.println(phanthuc + "+" + phanao + "i");
     }
 

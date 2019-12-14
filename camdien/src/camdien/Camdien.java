@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package hcn;
+package camdien;
 
 import java.util.Scanner;
 
@@ -11,15 +11,21 @@ import java.util.Scanner;
  *
  * @author Administrator
  */
-public class NewClass {
+public class Camdien {
+
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        System.out.println("Nhap vao chieu dai");
+        // TODO code application logic here
+        
         Scanner sc = new Scanner(System.in);
-        int cd = sc.nextInt();
-        System.out.println("Nhap vao chieu rong");
-        int cr = sc.nextInt();
-        Hcn h = new Hcn(cd, cr);
-       int a = 5/7;
-        System.out.println(a);
+        int n = sc.nextInt();
+        int [] a = new int[n];
+        for (int i = 0; i < n; i++) {
+            
+            
+        }
     }
+    
 }
