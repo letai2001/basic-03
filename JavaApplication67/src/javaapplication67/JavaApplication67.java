@@ -38,8 +38,26 @@ public class JavaApplication67 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         int y = sc.nextInt();
-        board[x][y] = sothutu;
+        while (x < 0 || x > 9 || y < 0 || y > 9) {
+            System.out.println("vượt quá giới han!nhập lại!");
+            x = sc.nextInt();
+            y = sc.nextInt();
+            if (0 < x && x < 9 && 0 < y && y < 9) {
+                break;
+            }
+        }
 
+        while (board[x][y] != 0) {
+
+            System.out.println("Ô đã đánh!nhập lại!");
+            x = sc.nextInt();
+            y = sc.nextInt();
+            if (board[x][y] == 0) {
+                break;
+            }
+
+        }
+        board[x][y] = sothutu;
     }
 
     public static void swap() {
