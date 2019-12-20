@@ -52,13 +52,23 @@ public class JavaApplication67 {
             System.out.println("Ô đã đánh!nhập lại!");
             x = sc.nextInt();
             y = sc.nextInt();
-            if (board[x][y] == 0) {
-                break;
+            while (x < 0 || x > 9 || y < 0 || y > 9) {
+                System.out.println("vượt quá giới han!nhập lại!");
+                x = sc.nextInt();
+                y = sc.nextInt();
+                if (0 < x && x < 9 && 0 < y && y < 9) {
+                    break;
+                }
             }
+                if (board[x][y] == 0) {
+                    break;
+                }
 
+            }
+            board[x][y] = sothutu;
         }
-        board[x][y] = sothutu;
-    }
+
+    
 
     public static void swap() {
         sothutu = 3 - sothutu;
